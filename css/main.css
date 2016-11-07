@@ -1,11 +1,60 @@
+/*ESTILOS BOTON DESPLEGABLE JS*/
+
 .menu-parent {
-	margin-top: 8px;
 	position: relative;
+	display: inline-block;
+	margin-top: 8px;
 }
 .menu-child {
 	position: absolute;
+    top: 100%;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+.menu-child li {
+    display: block;
+    padding: 0.2em 0.4em;
+    text-decoration: none;
+    list-style: none;
+    background: #CCCCCC;
+    color: #333333;
+}
+.menu-child li:hover {
 	background: gray;
-	color: white;
+}
+
+/*ESTILOS BOTON DESPLEGABLE CSS*/
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+}
+.dropdown-content {
+  	position: absolute;
+    top: 100%;
+    margin-left: -12px;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: none;
+}
+.dropdown-content li {
+    display: block;
+    padding: 0.2em 0.4em;
+    text-decoration: none;
+    list-style: none;
+    background: #CCCCCC;
+    color: #333333;
+}
+.dropdown-content li:hover {
+	background-color: gray;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* ==========================================================================
